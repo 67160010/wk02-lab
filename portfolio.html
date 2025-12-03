@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <meta
+      name="description"
+      content="พอร์ตโฟลิโอของ นายเทิดไท ศรีสวัสดิ์ นิสิตมหาวิทยาลัยบูรพา ผู้มีความชื่นชอบในการสร้างเว็บไซต์ที่สวยงามและใช้งานง่าย"
+    />
+    <meta
+      name="keywords"
+      content="พอร์ตโฟลิโอ, เว็บไซต์, HTML, CSS, JavaScript, นักพัฒนาเว็บไซต์, มหาวิทยาลัยบูรพา"
+    />
+  </head>
+  <body>
+    <!-- TODO: สร้าง header -->
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- TODO: สร้าง main ที่มี -->
+    <main>
+      <!-- About Section -->
+      <!-- - หัวข้อ -->
+      <!-- - รูปภาพตัวเอง <img> -->
+      <!-- - ข้อมูลประกอบ -->
+      <section id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <img src="image/kubola.jpg" alt="รูปภาพของฉัน" />
+        <p>
+          สวัสดี ผมชื่อ นายเทิดไท ศรีสวัสดิ์
+          ผมเป็นนิสิตมหาวิทยาลัยบูรพาที่มีความชื่นชอบในการสร้าง
+          เว็บไซต์ที่สวยงามและใช้งานง่าย
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <!-- - List ทักษะที่มีเป็น <ul> หรือ <ol> -->
+      <section id="skills">
+        <h2>ทักษะของฉัน</h2>
+        <table
+          border="1"
+          style="border-collapse: collapse; width: 50%; text-align: left"
+        >
+          <tr>
+            <th>ทักษะ</th>
+            <th>ระดับความชำนาญ</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>เชี่ยวชาญ</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>ดี</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>ปานกลาง</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Portfolio Section -->
+      <!-- - List of projects ใช้ <figure> และ <figcaption> -->
+      <section id="portfolio">
+        <h2>ผลงานของฉัน</h2>
+        <figure>
+          <img src="/image/shopee.png" style="width: 500px" alt="โปรเจค 1" />
+          <figcaption>โปรเจค 1: เว็บไซต์ร้านค้าออนไลน์</figcaption>
+        </figure>
+        <figure>
+          <img src="/image/ifbuu.png" style="width: 500px" alt="โปรเจค 2" />
+          <figcaption>โปรเจค 2: เว็บไซต์คณะ</figcaption>
+        </figure>
+      </section>
+
+      <!-- Contact Section -->
+      <!-- - Contact form -->
+      <section id="contact">
+        <h2>ติดต่อฉัน</h2>
+        <form action="/contact" method="POST">
+          <label for="name">ชื่อ:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="email">อีเมล:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="message">ข้อความ:</label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            required
+          ></textarea>
+          <br />
+          <input type="submit" value="ส่งข้อความ" />
+        </form>
+      </section>
+    </main>
+    <!-- TODO: สร้าง footer -->
+    <footer>
+      <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+      <nav>
+        <ul>
+          <li><a href="#about">เกี่ยวกับฉัน</a></li>
+          <li><a href="#skills">ทักษะ</a></li>
+          <li><a href="#portfolio">ผลงาน</a></li>
+          <li><a href="#contact">ติดต่อ</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
